@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style> 
+        div {
+          width: 100px;
+          height: 100px;
+          background: red;
+          position: relative;
+          animation: mymove 5s infinite;
+        }
+        
+        @keyframes mymove {
+          from {top: 0px;}
+          to {top: 200px;}
+        }
+        </style>
+</head>
+<body>
+    <li>The @keyframes rule specifies the animation code.</li>
+    <li>The animation is created by gradually changing from one set of CSS styles to another. During the animation, you
+        can change the set of CSS styles many times.</li>
+    <li>Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the same as
+        0% and 100%. 0% is the beginning of the animation, 100% is when the animation is complete.</li>
+    <h3>Example:-</h3>
+    <h1>The @keyframes Rule</h1>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sizing</title>
+    <style> 
+        .div1 {
+          width: 300px;
+          height: 100px;
+          border: 1px solid blue;
+          box-sizing: border-box;
+        }
+        
+        .div2 {
+          width: 300px;
+          height: 100px;  
+          padding: 50px;
+          border: 1px solid red;
+          box-sizing: border-box;
+        }
+        </style>
+</head>
+
+<body>
+    <li>Defines how the width and height of an element are calculated: should they include padding and borders, or not</li>
+    <li>The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+    </li>
+    <li>If you set box-sizing: border-box; on an element, padding and border are included in the width and height:</li>
+    <h3>Content-box</h3>
+    <p>Default. The width and height properties (and min/max properties) includes only the content. Border and padding are not included.</p>
+    <h3>Padding-box</h3>
+    <p>Clears an area around the content. The padding is transparent.</p>
+    <h3>border-box</h3>
+    <p>    The width and height properties (and min/max properties) includes content, padding and border.</p>
+    <h3>Example:-</h3>
+    <h1>With box-sizing</h1>
+
+    <div class="div1">Both divs are the same size now!</div>
+    <br>
+    <div class="div2">Hooray!</div>
+
+</body>
+
+</html>

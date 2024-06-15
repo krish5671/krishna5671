@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 2px solid red; */
+        }
+        .banner{
+            height: 500px;
+            width: 100%;
+            position: relative;
+        }
+        .banner .ban{
+            height: inherit;
+            width: inherit;
+            position: absolute;
+        }
+        .banner .ban-img img{
+            height: 100%;
+            width: 100%;
+            filter: brightness(40%) ;
+        }
+        .banner .ban-info{
+            font-size: 20px;
+            color: #fff;
+            width: 50%;
+            height: 50%;
+            top: 25%;
+            left: 25%;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <li>The position property specifies the type of positioning method used for an element static, relative, absolute, fixed, or sticky.</li>
+    <h4>Static:</h4>
+    <p>Default value. Elements render in order, as they appear in the document flow.</p>
+    <h4>Absolute:</h4>
+    <p>The element is positioned relative to its first positioned not static ancestor element.</p>
+    <h4>Fixed:</h4>
+    <p>The element is positioned relative to the browser window.</p>
+    <h4>Relative:</h4>
+    <p>The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position</p>
+    <h4>Sticky:</h4>
+    <p>	The element is positioned based on the user's scroll position</p>
+    <h3>Example:-</h3>
+    <div class="banner">
+        <div class="ban ban-img">
+            <img src="https://cdn.shopify.com/s/files/1/0348/5240/5379/files/DSC05479_07477d36-0f24-484a-966c-f721ca058084.jpg?v=1591133848" alt="">
+        </div>
+        <div class="ban ban-info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga repellendus voluptatibus impedit ex, sit repellat, quis iusto sed minus odio iste aliquid quidem odit ullam doloribus, cupiditate ipsum eius est? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, veniam laboriosam culpa dolorem quisquam illum velit minus explicabo, quis quo deleniti et excepturi assumenda ipsam. Cum, illo accusamus exercitationem est inventore culpa quisquam aut corrupti qui vel neque libero? Magni cum esse consectetur commodi quasi sed quo sequi dicta doloremque!</p>
+        </div>
+    </div>
+</body>
+</html>
