@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 26px;
+}
+.study{
+    color: brown;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce infinite;
+    animation-duration: 3s;
+}
